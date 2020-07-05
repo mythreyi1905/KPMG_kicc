@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_1"
+    tools:context=".activity.myAccount">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_user" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:background="@drawable/back1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:text="Name: "/>
+        <TextView
+            android:id="@+id/tv_aadhaar1"
+            android:layout_below="@+id/tv_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:text="Aadhaar: "/>
+        <TextView
+            android:id="@+id/tv_mobile1"
+            android:layout_below="@+id/tv_aadhaar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:text="Mobile: "/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_toEndOf="@+id/tv_name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tv_aadhaar"
+            android:layout_toEndOf="@+id/tv_aadhaar1"
+            android:layout_below="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:layout_toEndOf="@+id/tv_mobile1"
+            android:layout_below="@+id/tv_aadhaar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="SIGN-OUT"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/back2"/>
+    </RelativeLayout>
+
+</RelativeLayout>

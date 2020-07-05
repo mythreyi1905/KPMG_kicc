@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_2"
+    tools:context=".activity.home">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:visibility="invisible"
+        android:src="@drawable/pmoney" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView2"
+        android:src="@drawable/load"
+        android:layout_centerInParent="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Health is like money, we never know its value until we lose it"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Powered by COCOMO Creations"
+        android:textColor="#87ffffff"
+        android:textSize="10dp" />
+
+</RelativeLayout>

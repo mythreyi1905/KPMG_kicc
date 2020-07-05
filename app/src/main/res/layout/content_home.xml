@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.mapView"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15">
+            <Button
+                android:id="@+id/tab_cycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="CYCLE"
+                android:tag="16Kmph"
+                android:textSize="22dp"
+                android:textColor="#000000"
+                android:background="#00000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15">
+
+            <Button
+                android:id="@+id/tab_walk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ON-FOOT"
+                android:tag="4Kmph"
+                android:textSize="22dp"
+                android:textColor="#ffffff"
+                android:background="#95A9AA"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/distview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="Distance: "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_dist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/distview"
+                    android:gravity="center"
+                    android:text="0.0 KM"
+                    android:textColor="#684d4d"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/calview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="Calories: "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/calview"
+                    android:gravity="center"
+                    android:textColor="#684d4d"
+                    android:textStyle="bold"
+                    android:text="0 CAL"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.08">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/getlocation"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_location"
+                app:backgroundTint="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"/>
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/back2"
+                android:text="START"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_calc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories: "
+            android:textSize="22dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="2dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/tv_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tv_calc1"
+            android:textSize="25dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_credits"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/ic_bank"
+            android:textStyle="bold"
+            android:background="@drawable/back3"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_below="@+id/layout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/back2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:padding="5dp"
+        android:layout_below="@+id/layout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/dist"
+            android:layout_centerVertical="true"  />
+
+        <TextView
+            android:id="@+id/tv_dist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toEndOf="@+id/img1"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_dist"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/tv_dist"
+            android:text="KM"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:padding="5dp"
+        android:layout_below="@+id/layout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/speed"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toEndOf="@+id/img2"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_speed"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/tv_speed"
+            android:text="KMPH"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:padding="5dp"
+        android:layout_below="@+id/layout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_timer"
+            android:layout_toLeftOf="@+id/tv_time"
+            android:layout_marginRight="7dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_hr"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/tv_hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@+id/tv_time"
+            android:text="HR"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

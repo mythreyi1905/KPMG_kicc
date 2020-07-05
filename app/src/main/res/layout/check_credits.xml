@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_1"
+    tools:context=".activity.checkCredits">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_credits1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Credits"
+            android:textSize="22dp"
+            android:textColor="#a2ffffff"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_credits"
+            android:layout_below="@+id/tv_credits1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_rate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today Credit Value"
+            android:textSize="22dp"
+            android:textColor="#a2ffffff"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_below="@+id/tv_rate1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="3.13"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_calc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Price"
+            android:textSize="22dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/back2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_calc"
+            android:layout_below="@+id/tv_calc1"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

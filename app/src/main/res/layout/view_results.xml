@@ -1,0 +1,257 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#bf000000"
+    tools:context=".activity.viewResults">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            app:cpb_background_progressbar_width="5dp"
+            app:cpb_progressbar_width="15dp" />
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:text="100"
+            android:textColor="#ffffff"
+            android:textSize="100dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ceffffff"
+            android:layout_below="@+id/tv_progress"
+            android:text="Calories"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="40dp"
+                            android:src="@drawable/dist"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/tv_dist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toEndOf="@+id/img1"
+                            android:text="0.00"
+                            android:textSize="40dp"
+                            android:textColor="#ffffff"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toEndOf="@+id/img1"
+                            android:text="KM"
+                            android:textSize="16dp"
+                            android:textColor="#ceffffff"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="40dp"
+                            android:src="@drawable/speed"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/tv_speed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toEndOf="@+id/img1"
+                            android:text="0.0"
+                            android:textColor="#ffffff"
+                            android:textSize="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toEndOf="@+id/img1"
+                            android:text="KMPH"
+                            android:textSize="16dp"
+                            android:textColor="#ceffffff"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/ic_timer"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/tv_timer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toEndOf="@+id/img1"
+                            android:text="0.0"
+                            android:textSize="40dp"
+                            android:textColor="#ffffff"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toEndOf="@+id/img1"
+                            android:text="HR"
+                            android:textSize="16dp"
+                            android:textColor="#ceffffff"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/ic_bank1"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/tv_credits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toEndOf="@+id/img1"
+                            android:text="100"
+                            android:textSize="40dp"
+                            android:textColor="#ffffff"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toEndOf="@+id/img1"
+                            android:text="POINTS"
+                            android:textSize="16dp"
+                            android:textColor="#ceffffff"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/layout2">
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/ic_flag"
+            android:background="@drawable/back2"
+            android:text=" START AGAIN"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
